@@ -47,7 +47,7 @@
                 @for (int i = 0; i < 5; i++) { 
                     <div class="col-md-2">
                         <div class="position-relative form-group">
-                            <label class="control-label">Cashflow 1</label>
+                            <label class="control-label">Cashflow @i+1</label>
                             @Html.TextBoxFor(m => m.Cashflows[i], new { @class = "form-control", @value = "0" })
                             @Html.ValidationMessageFor(m => m.Cashflows[i], "", new { @class = "text-danger", @style = "font-style:italic;" })
                         </div>
